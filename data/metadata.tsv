@@ -1,0 +1,55 @@
+sample-id	stage	sex	replicate	treatment	weight	time	generation
+AFC1	adult	female	control 1	flunitrazepam	113	29-Jan-24	1st
+AFC2	adult	female	control 2	flunitrazepam	96.1	29-Jan-24	1st
+AFC3	adult	female	control 3	flunitrazepam	92.1	29-Jan-24	1st
+AFF1	adult	female	flunitrazepam 1	flunitrazepam	116.5	29-Jan-24	1st
+AFF2	adult	female	flunitrazepam 2	flunitrazepam	122.3	29-Jan-24	1st
+AFF3	adult	female	flunitrazepam 3	flunitrazepam	99.8	29-Jan-24	1st
+AMC1	adult	male	control 1	control	90.3	29-Jan-24	1st
+AMC2	adult	male	control 2	control	84.8	29-Jan-24	1st
+AMC3	adult	male	control 3	control	82	29-Jan-24	1st
+AMF1	adult	male	flunitrazepam 1	control	76	29-Jan-24	1st
+AMF2	adult	male	flunitrazepam 2	control	54.4	29-Jan-24	1st
+AMF3	adult	male	flunitrazepam 3	control	73.8	29-Jan-24	1st
+EC1	egg		control 1	control		29-Jan-24	
+EC2	egg		control 2	control		29-Jan-24	
+EC3	egg		control 3	control		29-Jan-24	
+EF1	egg		flunitrazepam 1	flunitrazepam		29-Jan-24	
+EF2	egg		flunitrazepam 2	flunitrazepam		29-Jan-24	
+EF3	egg		flunitrazepam 3	flunitrazepam		29-Jan-24	
+LIC1	first instar larvae		control 1	control	0.2	30-Jan-24	
+LIC2	first instar larvae		control 2	control	0.6	30-Jan-24	
+LIC3	first instar larvae		control 3	control	0.1	30-Jan-24	
+LIF1	first instar larvae		flunitrazepam 1	flunitrazepam	0.1	30-Jan-24	
+LIF2	first instar larvae		flunitrazepam 2	flunitrazepam	0.8	30-Jan-24	
+LIF3	first instar larvae		flunitrazepam 3	flunitrazepam	0.2	30-Jan-24	
+LIIC1	second instar larvae		control 1	control	0.7	31-Jan-24	
+LIIC2	second instar larvae		control 2	control	1.1	31-Jan-24	
+LIIC3	second instar larvae		control 3	control	1.1	31-Jan-24	
+LIIF1	second instar larvae		flunitrazepam 1	flunitrazepam	1	31-Jan-24	
+LIIF2_	second instar larvae		flunitrazepam 2	flunitrazepam	1.6	31-Jan-24	
+LIIF3	second instar larvae		flunitrazepam 3	flunitrazepam	1	31-Jan-24	
+LIIIC1	third instar larvae		control 1	control	21.6	02-Feb-24	
+LIIIC2	third instar larvae		control 2	control	26	02-Feb-24	
+LIIIC3	third instar larvae		control 3	control	39.2	02-Feb-24	
+LIIIF1	third instar larvae		flunitrazepam 1	flunitrazepam	23.3	02-Feb-24	
+LIIIF2	third instar larvae		flunitrazepam 2	flunitrazepam	36.4	02-Feb-24	
+LIIIF3	third instar larvae		flunitrazepam 3	flunitrazepam	24	02-Feb-24	
+PC1	pupa		control 1	control	47.3	12-Feb-24	
+PC2	pupa		control 2	control	44	12-Feb-24	
+PC3	pupa		control 3	control	43.9	12-Feb-24	
+PF1	pupa		flunitrazepam 1	flunitrazepam	63.8	12-Feb-24	
+PF2	pupa		flunitrazepam 2	flunitrazepam	59.4	12-Feb-24	
+PF3	pupa		flunitrazepam 3	flunitrazepam	69.7	12-Feb-24	
+TFC1	teneral	female	control 1	control	24	18-Feb-24	2nd
+TFC2	teneral	female	control 2	control	27.7	18-Feb-24	2nd
+TFC3	teneral	female	control 3	control	21.8	18-Feb-24	2nd
+TFF1	teneral	female	flunitrazepam 1	flunitrazepam	52.1	18-Feb-24	2nd
+TFF2	teneral	female	flunitrazepam 2	flunitrazepam	35.9	18-Feb-24	2nd
+TFF3	teneral	female	flunitrazepam 3	flunitrazepam	49.7	18-Feb-24	2nd
+TMC1	teneral	male	control 1	control	37.3	18-Feb-24	2nd
+TMC2	teneral	male	control 2	control	20.7	18-Feb-24	2nd
+TMC3	teneral	male	control 3	control	22.1	18-Feb-24	2nd
+TMF1	teneral	male	flunitrazepam 1	flunitrazepam	38.7	18-Feb-24	2nd
+TMF2	teneral	male	flunitrazepam 2	flunitrazepam	48.6	18-Feb-24	2nd
+TMF3	teneral	male	flunitrazepam 3	flunitrazepam	27.5	18-Feb-24	2nd
