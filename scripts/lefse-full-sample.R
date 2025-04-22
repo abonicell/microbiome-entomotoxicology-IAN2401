@@ -71,10 +71,10 @@ mm_lefse_stage <- run_lefse(
 mm_lefse_stage_tab <- data.frame(marker_table(mm_lefse_stage))
 
 write.csv(mm_lefse_stage_tab,
-          '/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/tables/supplementary Table 2.csv')
+          '/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/tables/supplementary Table 2.csv')
           
 # dot plot
 plot_ef_dot(mm_lefse_stage) 
 
-ggsave('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/Figure 6.pdf',
+ggsave('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/Figure 6.pdf',
        width = 7.5, height = 6)

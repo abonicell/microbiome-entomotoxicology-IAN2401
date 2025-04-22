@@ -135,7 +135,7 @@ ggarrange(
 )
 
 ggsave(
-  '/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/Figure 5.pdf',
+  '/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/Figure 5.pdf',
   width = 8,
   height = 4.5
 )
@@ -216,7 +216,7 @@ ggarrange(
 )
 
 ggsave(
-  '/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/supplementary Figure 1.pdf',
+  '/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/supplementary Figure 1.pdf',
   width = 8,
   height = 4.5
 )

@@ -107,7 +107,7 @@ C
 (B + C) / A + plot_annotation(tag_levels = 'A') +
   plot_layout(heights =  c(1, 1.5))
 
-ggsave('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/Figure 3.pdf', width = 11, height = 12)
+ggsave('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/Figure 3.pdf', width = 11, height = 12)
 
 # beta diversity ----------------------------------------------------------
 set.seed(123)
@@ -121,19 +121,18 @@ plot_ordination(ps, ordination, color = "stage", shape = "treatment")   +
         axis.text.y = element_text(size = 9))
 
 set.seed(123)
-adonis2(bray_dist1 ~ sample_data(ps)$stage, permutations = 10000)
+Permanova_bray <- adonis2(bray_dist1 ~ sample_data(ps)$stage, permutations = 10000)
 # Df SumOfSqs      R2      F    Pr(>F)    
 # Model     6   7.5527 0.36703 4.0589 9.999e-05 ***
 #   Residual 42  13.0253 0.63297                     
 # Total    48  20.5779 1.00000                     
 # ---
 #   Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
-adonis2(bray_dist1 ~ sample_data(ps)$treatment, permutations = 10000)
+Permanova_bray <- adonis2(bray_dist1 ~ sample_data(ps)$treatment, permutations = 10000)
 # Df SumOfSqs      R2      F Pr(>F)
 # Model     1   0.5162 0.02509 1.2094 0.2587
 # Residual 47  20.0617 0.97491              
 # Total    48  20.5779 1.00000   
 
-ggsave('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/Figure 4.pdf', width = 8.5, height = 6)
 
 

@@ -20,17 +20,17 @@ library("DT")
 theme_set(theme_bw())
 
 # read other files and merge into phyloseq object
-taxonomy<-qiime2R::read_qza("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/data/taxonomy-silva-v4.qza")
+taxonomy<-qiime2R::read_qza("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/data/taxonomy-silva-v4.qza")
 head(taxonomy$data);
 qiime2R::parse_taxonomy(taxonomy$data)
 
-( metadata <- readr::read_tsv("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/data/metadata.tsv") )
+( metadata <- readr::read_tsv("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/data/metadata.tsv") )
 
 ( physeq<-qiime2R::qza_to_phyloseq(
-  features="/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/data/table.qza",
-  tree = "/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/data/rooted-tree-rep-seqs.qza",
-  taxonomy="/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/data/taxonomy-silva-v4.qza",
-  metadata = "/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/data/metadata.tsv"
+  features="/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/data/table.qza",
+  tree = "/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/data/rooted-tree-rep-seqs.qza",
+  taxonomy="/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/data/taxonomy-silva-v4.qza",
+  metadata = "/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/data/metadata.tsv"
   ) ) # 141 taxa 
 
 # remove contaminants
@@ -46,7 +46,7 @@ qiime2R::parse_taxonomy(taxonomy$data)
 
 # prune sample to remove all with the sum of 0
 ps_prune <-  prune_samples(sample_sums(physeq)!=0, physeq)
-ps_prune  # 49 samples ot of 51
+ps_prune  # 49 samples of 54
 
 # check for missing data
 any(is.na(ps_prune@otu_table))
@@ -79,7 +79,7 @@ sample_data(ps)$stage <-
     )
   )
 
-ps@tax_table %>% write.csv('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/tables/supplementary Table 1.csv')
+ps@tax_table %>% write.csv('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/tables/supplementary Table 1.csv')
 
 ps@tax_table %>% datatable()
 
@@ -99,7 +99,7 @@ ggplot(metadata_weight, aes(treatment, weight)) +
   stat_compare_means(size= 2.5)
 
 
-ggsave('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/Figure 2.pdf', 
+ggsave('/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/Figure 2.pdf', 
        width = 8, height = 7)
 
 # t-test

@@ -9,6 +9,7 @@ suppressPackageStartupMessages({
   library("reshape2")
   library("dplyr")
   library("rstatix")
+  library("microbiomeMarker")
 })
 
 # -------------------------------------------------------------------------
@@ -44,7 +45,7 @@ ggplot(df.summary,
         axis.text=element_text(size=8), legend.position = 'bottom') +
   xlab('Developmental stage') + ggtitle("All variables") + ylab('Abundance')
 
-ggsave("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/supplementary Figure 2.pdf", 
+ggsave("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/supplementary Figure 2.pdf", 
        height = 20, width = 20)
 
 # selected ASV ------------------------------------------------------------
@@ -76,21 +77,10 @@ ggplot(df.summary,
         axis.text=element_text(size=12), legend.position = 'top') +
   xlab('Developmental stage') + ylab('Abundance')
 
-ggsave("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/figures/Figure 7.pdf", 
+ggsave("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/Figure 7.pdf", 
        height = 6, width = 8)
 
-# FDR ---------------------------------------------------------------------
-df_melted <- ps_otu %>%
-  dplyr::select(stage, treatment, ASV1:ASV136) %>%
-  gather(key = "variable", value = "value", -stage, -treatment)
-
-df_melted %>%
-  group_by(treatment, "variable") %>% 
-  pairwise_wilcox_test(value ~ stage) %>%
-  adjust_pvalue(method = "fdr") %>% 
-  add_significance("p.adj") %>% 
-  write.csv("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/tables/supplementary Table 3.csv")
-
+# -------------------------------------------------------------------------
 # Pairwise t-test
 ps_otu %>%
   group_by(treatment) %>% 
@@ -129,5 +119,4 @@ ps_otu %>%
   add_significance("p.adj") -> ASV99_pair
 
 rbind(ASV4_pair, ASV17_pair, ASV27_pair, ASV28_pair, ASV98_pair, ASV99_pair) %>% 
-  write.csv("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-UND/tables/supplementary Table 3.csv")
-
+  write.csv("/Users/andreabonicelli/Documents/GitHub/microbiome-entomotoxicology-IAN2401/tables/supplementary Table 3.csv")
