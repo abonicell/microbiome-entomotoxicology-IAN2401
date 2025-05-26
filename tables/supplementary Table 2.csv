@@ -1,36 +1,36 @@
 "","feature","enrich_group","ef_lda","pvalue","padj"
-"marker1","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Yersiniaceae|Serratia","adult",5.1085420122673,0.00110128081518335,0.00110128081518335
-"marker2","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Yersiniaceae","adult",5.10668897812398,0.00110128081518335,0.00110128081518335
-"marker3","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Yersiniaceae|Serratia|Serratia_s__","adult",5.10649661542435,0.00110128081518335,0.00110128081518335
-"marker4","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__|Unassigned_p___c___o___f__","egg",5.46953421690281,0.0138281755493804,0.0138281755493804
-"marker5","Unassigned","egg",5.46945040372297,0.0138281755493804,0.0138281755493804
-"marker6","Unassigned|Unassigned_p__","egg",5.46923836980966,0.0138281755493804,0.0138281755493804
-"marker7","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__|Unassigned_p___c___o___f__|Unassigned_p___c___o___f___g__","egg",5.46911260085626,0.0138281755493804,0.0138281755493804
-"marker8","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__","egg",5.46876021754708,0.0138281755493804,0.0138281755493804
-"marker9","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__|Unassigned_p___c___o___f__|Unassigned_p___c___o___f___g__|Unassigned_p___c___o___f___g___s__","egg",5.46848177168135,0.0138281755493804,0.0138281755493804
-"marker10","Unassigned|Unassigned_p__|Unassigned_p___c__","egg",5.46777175643392,0.0138281755493804,0.0138281755493804
-"marker11","d__Bacteria|Bacillota|Bacilli|Lactobacillales","first instar larvae",5.53394589877953,2.25232503452949e-06,2.25232503452949e-06
-"marker12","d__Bacteria|Bacillota|Bacilli","first instar larvae",5.51436998964984,4.0229335480077e-05,4.0229335480077e-05
-"marker13","d__Bacteria|Bacillota","first instar larvae",5.48317023101025,0.000680388820649594,0.000680388820649594
-"marker14","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae","first instar larvae",5.28529909862902,0.000453048119157288,0.000453048119157288
-"marker15","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Lactococcus|Lactococcus_s__","first instar larvae",5.27868721690701,0.000468548752384325,0.000468548752384325
-"marker16","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Lactococcus","first instar larvae",5.277634028591,0.000468548752384325,0.000468548752384325
-"marker17","d__Bacteria|Pseudomonadota","pupa",5.52290959439002,0.0270627004680313,0.0270627004680313
-"marker18","d__Bacteria|Pseudomonadota|Gammaproteobacteria","pupa",5.5219305534481,0.0251996330562054,0.0251996330562054
-"marker19","d__Bacteria","pupa",5.48457411941361,0.0105636740881076,0.0105636740881076
-"marker20","d__Bacteria|Bacillota|Clostridia|Oscillospirales|Ruminococcaceae|Faecalibacterium|Faecalibacterium_s__","pupa",4.76752538276302,0.00631603888634366,0.00631603888634366
-"marker21","d__Bacteria|Bacillota|Clostridia|Oscillospirales|Ruminococcaceae|Faecalibacterium","pupa",4.76670652867328,0.00631603888634366,0.00631603888634366
-"marker22","d__Bacteria|Bacillota|Bacilli|Bacillales|Planococcaceae","pupa",4.64014117132459,0.00631603888634366,0.00631603888634366
-"marker23","d__Bacteria|Bacillota|Bacilli|Bacillales|Planococcaceae|Savagea|Savagea_s__","pupa",4.57476656865284,0.00631603888634366,0.00631603888634366
-"marker24","d__Bacteria|Bacillota|Bacilli|Bacillales|Planococcaceae|Savagea","pupa",4.57428920674548,0.00631603888634366,0.00631603888634366
-"marker25","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Leuconostoc|Leuconostoc_s__","second instar larvae",4.894297430575,0.00671103311489612,0.00671103311489612
-"marker26","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Leuconostoc","second instar larvae",4.89343815349161,0.00671103311489612,0.00671103311489612
-"marker27","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae","teneral",5.4798001726945,0.00188872366716663,0.00188872366716663
-"marker28","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales","teneral",5.4765886469634,0.0448819463941812,0.0448819463941812
-"marker29","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Providencia","teneral",5.41886996724945,0.000160612671314444,0.000160612671314444
-"marker30","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Providencia|Providencia_s__","teneral",5.41615012988225,0.000160612671314444,0.000160612671314444
-"marker31","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae","third instar larvae",5.26761011774144,4.13273146456033e-06,4.13273146456033e-06
-"marker32","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Moellerella","third instar larvae",5.07505017430018,0.00222533882614841,0.00222533882614841
-"marker33","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Moellerella|Moellerella_s__","third instar larvae",5.07323929937414,0.00222533882614841,0.00222533882614841
-"marker34","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Latilactobacillus|Latilactobacillus_s__","third instar larvae",5.06119333660184,0.0207669095976543,0.0207669095976543
-"marker35","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Latilactobacillus","third instar larvae",5.05453488263194,0.0207669095976543,0.0207669095976543
+"marker1","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Yersiniaceae|Serratia","adult",5.16367085254685,0.00110128081518335,0.00110128081518335
+"marker2","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Yersiniaceae","adult",5.16360053969716,0.00110128081518335,0.00110128081518335
+"marker3","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Yersiniaceae|Serratia|Serratia_s__","adult",5.16301820176482,0.00110128081518335,0.00110128081518335
+"marker4","Unassigned","egg",5.51311719123753,0.0138281755493804,0.0138281755493804
+"marker5","Unassigned|Unassigned_p__|Unassigned_p___c__","egg",5.5129221988423,0.0138281755493804,0.0138281755493804
+"marker6","Unassigned|Unassigned_p__","egg",5.51230660942216,0.0138281755493804,0.0138281755493804
+"marker7","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__","egg",5.51196415496369,0.0138281755493804,0.0138281755493804
+"marker8","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__|Unassigned_p___c___o___f__|Unassigned_p___c___o___f___g__|Unassigned_p___c___o___f___g___s__","egg",5.5116260260412,0.0138281755493804,0.0138281755493804
+"marker9","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__|Unassigned_p___c___o___f__","egg",5.51136658132484,0.0138281755493804,0.0138281755493804
+"marker10","Unassigned|Unassigned_p__|Unassigned_p___c__|Unassigned_p___c___o__|Unassigned_p___c___o___f__|Unassigned_p___c___o___f___g__","egg",5.51131296028105,0.0138281755493804,0.0138281755493804
+"marker11","d__Bacteria|Bacillota|Bacilli|Lactobacillales","first instar larvae",5.50850360338376,2.25232503452949e-06,2.25232503452949e-06
+"marker12","d__Bacteria|Bacillota","first instar larvae",5.50225825516846,0.000680388820649594,0.000680388820649594
+"marker13","d__Bacteria|Bacillota|Bacilli","first instar larvae",5.49907970912877,4.0229335480077e-05,4.0229335480077e-05
+"marker14","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae","first instar larvae",5.24438846857215,0.000453048119157288,0.000453048119157288
+"marker15","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Lactococcus|Lactococcus_s__","first instar larvae",5.24061159162165,0.000468548752384325,0.000468548752384325
+"marker16","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Streptococcaceae|Lactococcus","first instar larvae",5.23721094017849,0.000468548752384325,0.000468548752384325
+"marker17","d__Bacteria","pupa",5.53052154658632,0.0105636740881076,0.0105636740881076
+"marker18","d__Bacteria|Pseudomonadota|Gammaproteobacteria","pupa",5.51166727329811,0.0251996330562054,0.0251996330562054
+"marker19","d__Bacteria|Pseudomonadota","pupa",5.50689493166892,0.0270627004680313,0.0270627004680313
+"marker20","d__Bacteria|Bacillota|Bacilli|Bacillales|Planococcaceae","pupa",4.85976169899215,0.00631603888634366,0.00631603888634366
+"marker21","d__Bacteria|Bacillota|Bacilli|Bacillales|Planococcaceae|Savagea","pupa",4.8070232767245,0.00631603888634366,0.00631603888634366
+"marker22","d__Bacteria|Bacillota|Bacilli|Bacillales|Planococcaceae|Savagea|Savagea_s__","pupa",4.79238381101995,0.00631603888634366,0.00631603888634366
+"marker23","d__Bacteria|Bacillota|Clostridia|Oscillospirales|Ruminococcaceae|Faecalibacterium|Faecalibacterium_s__","pupa",4.71907840930682,0.00631603888634366,0.00631603888634366
+"marker24","d__Bacteria|Bacillota|Clostridia|Oscillospirales|Ruminococcaceae|Faecalibacterium","pupa",4.70343396225604,0.00631603888634366,0.00631603888634366
+"marker25","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Leuconostoc|Leuconostoc_s__","second instar larvae",4.77673824356777,0.00671103311489612,0.00671103311489612
+"marker26","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Leuconostoc","second instar larvae",4.7649156099037,0.00671103311489612,0.00671103311489612
+"marker27","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales","teneral",5.47880647713969,0.0448819463941812,0.0448819463941812
+"marker28","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae","teneral",5.46437224071517,0.00188872366716663,0.00188872366716663
+"marker29","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Providencia","teneral",5.39133634956305,0.000160612671314444,0.000160612671314444
+"marker30","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Providencia|Providencia_s__","teneral",5.3893299976285,0.000160612671314444,0.000160612671314444
+"marker31","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae","third instar larvae",5.22706233055563,4.13273146456033e-06,4.13273146456033e-06
+"marker32","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Moellerella","third instar larvae",5.07637615088015,0.00222533882614841,0.00222533882614841
+"marker33","d__Bacteria|Pseudomonadota|Gammaproteobacteria|Enterobacterales|Morganellaceae|Moellerella|Moellerella_s__","third instar larvae",5.07591822644598,0.00222533882614841,0.00222533882614841
+"marker34","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Latilactobacillus","third instar larvae",5.04905828035357,0.0207669095976543,0.0207669095976543
+"marker35","d__Bacteria|Bacillota|Bacilli|Lactobacillales|Lactobacillaceae|Latilactobacillus|Latilactobacillus_s__","third instar larvae",5.04390711376302,0.0207669095976543,0.0207669095976543

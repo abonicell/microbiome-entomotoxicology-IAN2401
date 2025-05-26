@@ -35,7 +35,7 @@ prepare_bar_data <- function(physeq_object,
   return(out)
 }
 
-##-----------------------------------------------------------------------------
+# -------------------------------------------------------------------------
 # group taxa by similarity
 phy <- phyloseq::tax_glom(ps, "Phylum")
 # assign name
@@ -52,12 +52,27 @@ phyloseq::psmelt(phy) %>%
   geom_boxplot(outlier.shape  = NA) +
   geom_jitter(aes(color = Phylum), height = 0, width = .2) +
   labs(x = "Development", y = "Abundance\n") +
-  facet_wrap( ~ OTU + treatment, scales = "free_y") +
+  facet_wrap(~ OTU + treatment, scales = "free_y") +
   labs(title = NULL, subtitle = NULL) +
   guides(fill = guide_legend(ncol = 1, byrow = TRUE)) +
   theme(axis.text.x = element_text(angle = 45, hjust = 0.95)) +
   theme(legend.position = "none")
 
+
+# full sample barplot -----------------------------------------------------
+phy <- phyloseq::tax_glom(ps, "Phylum")
+phy_tr <- transform_sample_counts(ps, function(x)
+  x / sum(x) * (100))
+
+plot_bar(phy_tr, x = "Sample", fill = "Phylum") +
+  geom_bar(aes(fill = Phylum), stat = "identity", position = "stack") +
+  labs(x = "", y = "Abundance (%)", title = "Control") +
+  theme(axis.text.x = element_text(
+    size = rel(0.9),
+    angle = 45,
+    hjust = 1,
+    vjust = 1
+  )) + facet_wrap( ~ stage, scales = "free_x", nrow = 1)
 
 # barplot -----------------------------------------------------------------
 phy_control <- subset_samples(ps, treatment == "control")
@@ -94,8 +109,7 @@ a <- plot_bar(ps_phylum_ctrl, x = "stage", fill = "Phylum") +
 
 # barplot -----------------------------------------------------------------
 phy_control <- subset_samples(ps, treatment == "flunitrazepam")
-ps_phylum_flun <- prepare_bar_data(phy_control, grouping_var = "stage", tax_level =
-                                     "Phylum")
+ps_phylum_flun <- prepare_bar_data(phy_control, tax_level = "Phylum")
 
 # arrange groups in developement order
 sample_data(ps_phylum_flun)$stage <-
