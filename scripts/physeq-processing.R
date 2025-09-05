@@ -114,7 +114,17 @@ ggplot(metadata_weight, aes(treatment, weight)) +
   stat_compare_means(method = 't.test', size= 2.5) 
 
 
+# bar ---------------------------------------------------------------------
+ps_rel_abund = transform_sample_counts(ps, function(x) x/sum(x)*100)
 
+phyloseq::plot_bar(ps_rel_abund, fill = "Phylum") +
+  geom_bar(aes(color = Phylum, fill = Phylum), stat = "identity", position = "stack") +
+  labs(x = "", y = "Relative Abundance\n") +
+  # facet_wrap(~ Status, scales = "free") +
+  theme(panel.background = element_blank(),
+        # axis.text.x=element_blank(),
+        # axis.ticks.x=element_blank()
+        )
 
 
 
