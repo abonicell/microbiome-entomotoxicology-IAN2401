@@ -115,16 +115,40 @@ ggplot(metadata_weight, aes(treatment, weight)) +
 
 
 # bar ---------------------------------------------------------------------
-ps_rel_abund = transform_sample_counts(ps, function(x) x/sum(x)*100)
+ps.rel = transform_sample_counts(ps, function(x) x/sum(x)*100)
+# agglomerate taxa
+glom <- tax_glom(ps.rel, taxrank = 'Phylum', NArm = FALSE)
+ps.melt <- psmelt(glom)
+# change to character for easy-adjusted level
+ps.melt$Genus <- as.character(ps.melt$Phylum)
 
-phyloseq::plot_bar(ps_rel_abund, fill = "Phylum") +
-  geom_bar(aes(color = Phylum, fill = Phylum), stat = "identity", position = "stack") +
-  labs(x = "", y = "Relative Abundance\n") +
-  # facet_wrap(~ Status, scales = "free") +
-  theme(panel.background = element_blank(),
-        # axis.text.x=element_blank(),
-        # axis.ticks.x=element_blank()
-        )
+ps.melt <- ps.melt %>%
+  group_by(stage, Phylum) %>%
+  mutate(median=median(Abundance))
+# select group mean > 1
+keep <- unique(ps.melt$Phylum[ps.melt$median > 2.5])
+ps.melt$Phylum[!(ps.melt$Phylum %in% keep)] <- "< 2.5%"
+#to get the same rows together
+ps.melt_sum <- ps.melt %>%
+  group_by(Sample,stage,Phylum) %>%
+  summarise(Abundance=sum(Abundance))
 
+ggplot(ps.melt_sum, aes(x = Sample, y = Abundance, fill = Phylum)) + 
+  geom_bar(stat = "identity") + 
+  labs(x = "", y = "%") +
+  theme_bw() + 
+  theme(
+    legend.position = "right", 
+    strip.background = element_blank(), 
+    axis.text.x = element_text(
+      size = rel(0.9),
+      angle = 45,
+      hjust = 1,
+      vjust = 1
+    )
+  )
+
+
+ggsave("~/Documents/GitHub/microbiome-entomotoxicology-IAN2401/figures/Supplementary Figure 3.pdf", height = 5, width = 13)
 
 
